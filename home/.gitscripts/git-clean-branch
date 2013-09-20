@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#
+# 
+#
+git branch --remote ${OptMerged} | while read Branch
+do
+  LastCommit=$(git log --pretty=tformat:"%an,%ci,%s" -1 ${Branch})
+  if [[ $? != 0 ]]; then
+    continue
+  fi
+
+  Author=$(echo ${LastCommit} | cut -d"," -f1)
+  Date=$(echo ${LastCommit} | cut -d"," -f2)
+  Message=$(echo ${LastCommit} | cut -d"," -f3-)
+
+  echo -e "${Author}\t${Date}\t${Branch}\t${Message}"
+done
