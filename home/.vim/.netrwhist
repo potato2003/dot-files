@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/vagrant/project/pf-animelo/pf-animelo/src/portal/src/Animelo/PortalBundle/Controller'
+let g:netrw_dirhist_2='/vagrant/project/pf-animelo/pf-animelo/src/portal/src/Animelo/PortalBundle/Repository'
+let g:netrw_dirhist_3='/vagrant/project/pf-animelo/pf-animelo/src/portal/src/Animelo/PortalBundle/Document'
+let g:netrw_dirhist_4='/vagrant/project/pf-animelo/pf-animelo/src/portal/src/Animelo/PortalBundle/Resources/assets/sass'
