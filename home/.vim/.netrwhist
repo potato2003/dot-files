@@ -1,6 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/vagrant/project/pf-animelo/pf-animelo/src/portal/src/Animelo/PortalBundle/Controller'
-let g:netrw_dirhist_2='/vagrant/project/pf-animelo/pf-animelo/src/portal/src/Animelo/PortalBundle/Repository'
-let g:netrw_dirhist_3='/vagrant/project/pf-animelo/pf-animelo/src/portal/src/Animelo/PortalBundle/Document'
-let g:netrw_dirhist_4='/vagrant/project/pf-animelo/pf-animelo/src/portal/src/Animelo/PortalBundle/Resources/assets/sass'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/ryuji_ito/dev/sumo-urushi/app/controllers'
+let g:netrw_dirhist_2='/Users/ryuji_ito/dev/sumo-urushi/app'
+let g:netrw_dirhist_3='/Users/ryuji_ito/dev/sumo-urushi/app/config'
+let g:netrw_dirhist_4='/Users/ryuji_ito/dev/sumo-urushi/app'
+let g:netrw_dirhist_5='/Users/ryuji_ito/dev/sumo-urushi/app/controllers'
+let g:netrw_dirhist_6='/Users/ryuji_ito/dev/sumo-urushi/app/controllers/honbasho'
+let g:netrw_dirhist_7='/Users/ryuji_ito/dev/sumo-urushi/app/controllers/honbasho/gohiiki'
+let g:netrw_dirhist_8='/Users/ryuji_ito'

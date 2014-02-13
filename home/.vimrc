@@ -1,70 +1,89 @@
-" -- Vundle --
-filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-
-" -- plugins --
-" -- Requirement
-Bundle 'gmarik/vundle'
-
-" -- 
-" Bundle 'thinca/vim-ref'
-" Bundle 'minibufexpl.vim'
-" Bundle 'Command-T'
-" Bundle 'scrooloose/syntastic'
-" Bundle 'snipMate'
-" Bundle 'tpope/vim-fugitive'
-" Bundle 'scrooloose/nerdtree'
-" Bundle 'scrooloose/nerdcommenter'
-" Bundle 'Tagbar'
-"-- Bundle 'simple pairs'
-
-Bundle 'h1mesuke/unite-outline'
-
-Bundle 'thinca/vim-quickrun'
-Bundle 'Shougo/vimproc'
-
-Bundle 'taglist.vim'
-Bundle 'sjl/gundo.vim'
-
-" -- Development --
-Bundle 'project.tar.gz'
-
-" -- Programing language --
-
-" ---- CoffeeScript
-Bundle 'kchmck/vim-coffee-script' 
-
-" ---- PHP
-Bundle 'arnaud-lb/vim-php-namespace'
-
-" ------ Symfony2
-Bundle 'docteurklein/vim-symfony'
-
-" ------ ActionScript
-Bundle 'vim-scripts/actionscript.vim--Leider'
-au BufNewFile,BufRead *.as set ft=actionscript
-
-" ----- VB.NET
-Bundle 'hachibeeDI/vim-vbnet'
-if exists("did_load_filetypes")
-  finish
+" -------------------------------------------------------------------
+" NeoBundle 
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
-augroup filetypedetect
-  au! BufRead,BufNewFile *.vb setfiletype vbnet
-augroup END
 
-nnoremap q :GundoToggle<CR>
+call neobundle#rc(expand('~/.vim/bundle/'))
 
-" ----- Scala
-Bundle 'derekwyatt/vim-scala'
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
 
-" -- File
-set noswapfile
-set nobackup
+" add plugins
+
+filetype plugin on
+
+NeoBundleCheck
 
 
+" -- Vundle --
+"filetype off
+"" set rtp+=~/.vim/bundle/vundle
+"" call vundle#rc()
+"
+"" -- plugins --
+"" -- Requirement
+"Bundle 'gmarik/vundle'
+"
+"" -- 
+"" Bundle 'thinca/vim-ref'
+"" Bundle 'minibufexpl.vim'
+"" Bundle 'Command-T'
+"" Bundle 'scrooloose/syntastic'
+"" Bundle 'snipMate'
+"" Bundle 'tpope/vim-fugitive'
+"" Bundle 'scrooloose/nerdtree'
+"" Bundle 'scrooloose/nerdcommenter'
+"" Bundle 'Tagbar'
+""-- Bundle 'simple pairs'
+"
+"Bundle 'h1mesuke/unite-outline'
+"
+"Bundle 'thinca/vim-quickrun'
+"Bundle 'Shougo/vimproc'
+"
+"Bundle 'taglist.vim'
+"Bundle 'sjl/gundo.vim'
+"
+"" -- Development --
+"Bundle 'project.tar.gz'
+"
+"" -- Programing language --
+"
+"" ---- CoffeeScript
+"Bundle 'kchmck/vim-coffee-script' 
+"
+"" ---- PHP
+"Bundle 'arnaud-lb/vim-php-namespace'
+"
+"" ------ Symfony2
+"Bundle 'docteurklein/vim-symfony'
+"
+"" ------ ActionScript
+"Bundle 'vim-scripts/actionscript.vim--Leider'
+"au BufNewFile,BufRead *.as set ft=actionscript
+"
+"" ----- VB.NET
+"Bundle 'hachibeeDI/vim-vbnet'
+"if exists("did_load_filetypes")
+"  finish
+"endif
+"augroup filetypedetect
+"  au! BufRead,BufNewFile *.vb setfiletype vbnet
+"augroup END
+"
+"nnoremap q :GundoToggle<CR>
+"
+"" ----- Scala
+"Bundle 'derekwyatt/vim-scala'
+"
+"" -- File
+"set noswapfile
+"set nobackup
+
+
+" -------------------------------------------------------------------
 " Include partical files
 for f in split(glob('~/vimfiles/vimrc.d/*.vim'), '\n')
   exe 'source' f
