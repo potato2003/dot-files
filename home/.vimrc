@@ -77,10 +77,10 @@ NeoBundleCheck
 "
 "" ----- Scala
 "Bundle 'derekwyatt/vim-scala'
-"
+
 "" -- File
-"set noswapfile
-"set nobackup
+set noswapfile
+set nobackup
 
 
 " -------------------------------------------------------------------
