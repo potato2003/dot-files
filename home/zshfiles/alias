@@ -1,8 +1,15 @@
-alias f='df -h'
-alias grep='grep --color=auto'
-alias j='_z 2>&1'
-alias ll='ls -l'
+
+# ls
 alias ls='ls -G'
+alias ll='ls -l'
+
+# grep
+alias grep='grep --color=auto'
+
+# z
+# alias j='_z 2>&1'
+
+# misc
 alias p=pwd
 alias u='cd ../'
 alias uu='cd ../../'
